@@ -205,13 +205,13 @@ video {
 }
 @media only screen and (max-width: 300px) {
   .section-1 img {
-    width: 20rem;
+    width: 15rem;
     height: auto;
   }
 }
 @media only screen and (max-width: 700px) {
   .section-1 img {
-    width: 30rem;
+    width: 20rem;
     height: auto;
   }
 }
@@ -335,13 +335,13 @@ video {
 }
 @media only screen and (max-width: 300px) {
   .section-3 img {
-    width: 20rem;
+    width: 15rem;
     height: auto;
   }
 }
 @media only screen and (max-width: 700px) {
   .section-3 img {
-    width: 30rem;
+    width: 20rem;
     height: auto;
   }
 }
@@ -400,13 +400,13 @@ video {
 }
 @media only screen and (max-width: 300px) {
   .section31 img {
-    width: 20rem;
+    width: 15rem;
     height: auto;
   }
 }
 @media only screen and (max-width: 700px) {
   .section31 img {
-    width: 30rem;
+    width: 20rem;
     height: auto;
   }
 }
@@ -465,13 +465,13 @@ video {
 }
 @media only screen and (max-width: 300px) {
   .section-4 img {
-    width: 20rem;
+    width: 15rem;
     height: auto;
   }
 }
 @media only screen and (max-width: 700px) {
   .section-4 img {
-    width: 30rem;
+    width: 20rem;
     height: auto;
   }
 }
