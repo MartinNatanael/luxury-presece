@@ -1,0 +1,545 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+header nav ul {
+  font-family: "Roboto", sans-serif;
+  z-index: 1000;
+  width: 100vw;
+  background: #112d4e;
+  text-align: center;
+  list-style: none;
+  overflow: hidden;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+}
+header ul li {
+  display: inline-block;
+  padding: 20px;
+  transition: all ease-in-out 250ms;
+}
+header ul li:hover {
+  color: #112d4e;
+}
+header ul li a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+header .hide {
+  padding: 16px;
+  font-size: 22px;
+  background: #112d4e;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 768px) {
+  header ul li {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+  }
+  header .hide {
+    display: block;
+  }
+  header nav ul {
+    display: none;
+  }
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.overlay .absolute {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(66, 67, 68, 0.253);
+  flex-direction: column;
+}
+.overlay .absolute .title {
+  font-family: "Bodoni Moda", serif;
+  font-style: italic;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  color: #fff;
+}
+.overlay .absolute .p-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  margin: 5px;
+}
+
+video {
+  width: 100%;
+}
+
+.section-0 {
+  background-image: linear-gradient(to bottom, #d0e6ecef 25%, #b4b9c9ec 100%), url(../image/carlos-bastias-kQUXev4ihmo-unsplash.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15%;
+}
+.section-0 h2 {
+  text-rendering: optimizeLegibility;
+  line-height: 3rem;
+  text-align: center;
+  font-family: "Bodoni Moda", serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #0f2c4d;
+}
+.section-0 p {
+  text-align: center;
+  padding: 2%;
+}
+.section-0 button {
+  color: #fff;
+  width: 10rem;
+  margin: 1%;
+  padding: 10px;
+  background-color: #0f2c4d;
+}
+.section-0 button :hover {
+  background-color: #fff;
+  color: #0f2c4d;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 3%;
+  background-color: #0f2c4d;
+  margin-top: -10px;
+}
+@media only screen and (max-width: 300px) {
+  .section-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .section-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.section-1 .contenedor-texto {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+.section-1 .contenedor-texto h2 {
+  font-size: 2.5rem;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+.section-1 .contenedor-texto h3 {
+  text-align: center;
+  color: #fff;
+  margin: 10px;
+  font-style: italic;
+  font-weight: 200;
+  padding: 10px;
+  text-rendering: optimizeLegibility;
+}
+.section-1 .contenedor-texto p {
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+.section-1 img {
+  width: 40rem;
+  height: auto;
+  z-index: 1;
+}
+@media only screen and (max-width: 300px) {
+  .section-1 img {
+    width: 20rem;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .section-1 img {
+    width: 30rem;
+    height: auto;
+  }
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 3%;
+  background-color: #fff;
+  margin-top: -10px;
+}
+@media only screen and (max-width: 300px) {
+  .section-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .section-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.section-2 .contenedor-texto {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+.section-2 .contenedor-texto h2 {
+  font-size: 2.5rem;
+  padding: 10px;
+  text-align: center;
+  color: #0f2c4d;
+}
+.section-2 .contenedor-texto h3 {
+  text-align: center;
+  color: #0f2c4d;
+  margin: 10px;
+  font-style: italic;
+  font-weight: 100;
+  padding: 10px;
+}
+.section-2 .contenedor-texto p {
+  font-weight: 0;
+  text-align: center;
+  color: #0f2c4d;
+  text-rendering: optimizeLegibility;
+}
+.section-2 img {
+  width: 30rem;
+  height: auto;
+  z-index: 1;
+}
+@media only screen and (max-width: 300px) {
+  .section-2 img {
+    width: 20rem;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .section-2 img {
+    width: 30rem;
+    height: auto;
+  }
+}
+
+.section-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 3%;
+  background-color: #0f2c4d;
+  margin-top: -10px;
+}
+@media only screen and (max-width: 300px) {
+  .section-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .section-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.section-3 .contenedor-texto {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+.section-3 .contenedor-texto h2 {
+  font-size: 2.5rem;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+.section-3 .contenedor-texto h3 {
+  text-align: center;
+  color: #fff;
+  margin: 10px;
+  font-style: italic;
+  font-weight: 200;
+  padding: 10px;
+  text-rendering: optimizeLegibility;
+}
+.section-3 .contenedor-texto p {
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+.section-3 img {
+  width: auto;
+  height: 40rem;
+  z-index: 1;
+}
+@media only screen and (max-width: 300px) {
+  .section-3 img {
+    width: 20rem;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .section-3 img {
+    width: 30rem;
+    height: auto;
+  }
+}
+
+.section31 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 3%;
+  background-color: #0f2c4d;
+  margin-top: -10px;
+}
+@media only screen and (max-width: 300px) {
+  .section31 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .section31 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.section31 .contenedor-texto {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+.section31 .contenedor-texto h2 {
+  font-size: 2.5rem;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+.section31 .contenedor-texto h3 {
+  text-align: center;
+  color: #fff;
+  margin: 10px;
+  font-style: italic;
+  font-weight: 200;
+  padding: 10px;
+  text-rendering: optimizeLegibility;
+}
+.section31 .contenedor-texto p {
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+.section31 img {
+  width: 40rem;
+  height: auto;
+  z-index: 1;
+}
+@media only screen and (max-width: 300px) {
+  .section31 img {
+    width: 20rem;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .section31 img {
+    width: 30rem;
+    height: auto;
+  }
+}
+
+.section-4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 3%;
+  background-color: #fff;
+  margin-top: -10px;
+}
+@media only screen and (max-width: 300px) {
+  .section-4 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .section-4 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.section-4 .contenedor-texto {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+.section-4 .contenedor-texto h2 {
+  font-size: 2.5rem;
+  padding: 10px;
+  text-align: center;
+  color: #0f2c4d;
+}
+.section-4 .contenedor-texto h3 {
+  text-align: center;
+  color: #0f2c4d;
+  margin: 10px;
+  font-style: italic;
+  font-weight: 100;
+  padding: 10px;
+}
+.section-4 .contenedor-texto p {
+  font-weight: 500;
+  text-align: center;
+  color: #0f2c4d;
+  text-rendering: optimizeLegibility;
+}
+.section-4 img {
+  width: 40rem;
+  height: auto;
+  z-index: 1;
+}
+@media only screen and (max-width: 300px) {
+  .section-4 img {
+    width: 20rem;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .section-4 img {
+    width: 30rem;
+    height: auto;
+  }
+}
+
+.section-02 {
+  background-image: linear-gradient(to bottom, #ffffffd2 25%, #e6eaf8d3 100%), url(/image/cody-board-gitJDJm-Zuk-unsplash.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+.section-02 h2 {
+  text-rendering: optimizeLegibility;
+  line-height: 3rem;
+  text-align: center;
+  font-family: "Bodoni Moda", serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #0f2c4d;
+}
+.section-02 p {
+  text-align: center;
+  padding: 2%;
+}
+.section-02 button {
+  color: #fff;
+  width: 10rem;
+  margin: 1%;
+  padding: 10px;
+  background-color: #0f2c4d;
+}
+.section-02 button :hover {
+  background-color: #fff;
+  color: #0f2c4d;
+}
+
+.section-final {
+  background-image: linear-gradient(to bottom, #d0e6eca2 25%, #b4b9c988 100%), url(../image/kristin-wilson-ZxXy938ftvw-unsplash.jpg);
+  background-size: cover;
+  padding: 15%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+.section-final h2 {
+  text-rendering: optimizeLegibility;
+  line-height: 3rem;
+  text-align: center;
+  font-family: "Bodoni Moda", serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #0f2c4d;
+}
+.section-final p {
+  text-align: center;
+  padding: 2%;
+}
+.section-final button {
+  color: #fff;
+  width: 10rem;
+  margin: 1%;
+  padding: 10px;
+  background-color: #0f2c4d;
+}
+.section-final button :hover {
+  background-color: #fff;
+  color: #0f2c4d;
+}
+
+footer {
+  background-color: #0f2c4d;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer div {
+  border-top: 0.3px solid;
+  border-color: #fff;
+}
+footer .copyright .cop {
+  padding: 2%;
+  color: #fff;
+  font-family: roboto;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

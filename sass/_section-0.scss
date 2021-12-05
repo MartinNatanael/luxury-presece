@@ -1,0 +1,34 @@
+.section-0{
+    background-image: linear-gradient(to bottom, #d0e6ecef 25%, #b4b9c9ec 100%), url(../image/carlos-bastias-kQUXev4ihmo-unsplash.jpg) ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:15%;
+    h2{
+ 
+        text-rendering: optimizeLegibility;
+        line-height: 3rem;
+    text-align: center;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color:#0f2c4d;
+    }
+    p{
+        text-align: center;
+        padding: 2%;
+    }
+    button{
+        color: #fff;
+        width: 10rem;
+        margin: 1%;
+        padding: 10px;
+        background-color: #0f2c4d;
+        & :hover{
+            background-color: #fff;
+            color: #0f2c4d;
+        }
+    }
+}
