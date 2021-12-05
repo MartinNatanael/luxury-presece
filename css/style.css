@@ -84,6 +84,16 @@ header .hide {
   letter-spacing: 0.5rem;
   color: #fff;
 }
+@media only screen and (max-width: 300px) {
+  .overlay .absolute .title {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .overlay .absolute .title {
+    font-size: 2;
+  }
+}
 .overlay .absolute .p-title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -91,6 +101,16 @@ header .hide {
   letter-spacing: 0.1rem;
   color: #fff;
   margin: 5px;
+}
+@media only screen and (max-width: 300px) {
+  .overlay .absolute .p-title {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .overlay .absolute .p-title {
+    font-size: 1rem;
+  }
 }
 
 video {
